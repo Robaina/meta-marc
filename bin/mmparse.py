@@ -323,7 +323,7 @@ class TbloutParser:
                             'Metric_Entropy,Min_Max,L2norm_Deviation,Vector\n'))
             if graphdir:
                 plt.ioff()  # no interactive mode
-                plt.hold(False)  # don't keep plot
+                # plt.hold(False)  # don't keep plot  (this feature obsolete)
                 plot_count = 0
             for model, info in self.vector_hash.items():
                 if model in self.screened_models or model not in self.hmm_observed.keys():
